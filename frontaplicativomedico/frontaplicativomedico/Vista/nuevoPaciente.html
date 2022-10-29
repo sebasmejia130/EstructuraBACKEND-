@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="AplicativoMedico">
+    <meta name="keywords" content="AppMedico,Pacientes,AplicativoMedico">
+    <meta name="author" content="Sebotas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo Medico - Nuevo Paciente</title>
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+<body class="body">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Aplicativo Medico</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Menu Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paciente.html">Pacientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./medicoGeneral.html">Medicos Generales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ordenesRemisiones.html">Ordenes/Remisiones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br />
+        <header class="pb-3 mb-4 border-bottom">
+                <h3 class="title">Crear Paciente</h3>               
+          </header>
+          <section class="content">
+            <form id="formPaciente" accept-charset="utf-8" >
+            <div class="mb-3">
+                <input type="hidden" class="form-control" name="paciente_id_pk" value="0" id="paciente_id_pk" >
+                <label for="textIdPaciente" class="form-label">IdPaciente</label>
+                <input type="number" class="form-control" name="textIdPaciente" id="textIdPaciente" 
+                placeholder="IdPaciente">
+              </div>
+              <div class="mb-3">
+                <label for="textApellidoMaternoPaciente" class="form-label">Apellido materno del paciente</label>
+                <input type="text" class="form-control" id="textApellidoMaternoPaciente" name="textApellidoMaternoPaciente" 
+                placeholder="Apellido Materno del Paciente"/>
+              </div>
+              <div class="mb-3">
+                <label for="textApellidoPaternoPaciente" class="form-label">Apellido paterno del paciente</label>
+                <input type="text" class="form-control" id="textApellidoPaternoPaciente" name="textApellidoPaternoPaciente" 
+                placeholder="Apellido Paterno del Paciente"/>
+              </div>
+              <div class="mb-3">
+                <label for="textCiudadResidenciaPaciente" class="form-label">Ciudad de residencia del paciente</label>
+                <input type="text" class="form-control" id="textCiudadResidenciaPaciente" name="textCiudadResidenciaPaciente" 
+                placeholder="Ciudad de residencia del Paciente"/>
+              </div>
+              <div class="mb-3">
+                <label for="intCodigoAfiliacion" class="form-label">Codigo de afiliacion del paciente</label>
+                <input type="number" class="form-control" id="intCodigoAfiliacion" name="intCodigoAfiliacion" 
+                placeholder="Codigo de afiliacion del Paciente"/>
+              </div>
+              <div class="mb-3">
+                <label for="textContraseñaPaciente" class="form-label">Contraseña del paciente</label>
+                <input type="text" class="form-control" id="textContraseñaPaciente" name="textContraseñaPaciente" 
+                placeholder="Contraseña del Paciente"/>
+              </div>
+              <div class="mb-3">
+                <label for="textDireccionResidenciaPaciente" class="form-label">Direccion de residencia del paciente</label>
+                <input type="text" class="form-control" id="textDireccionResidenciaPaciente" name="textDireccionResidenciaPaciente" 
+                placeholder="Direccion de residencia del Paciente"/>
+              </div>
+              <div class="mb-3">
+                <label for="textEmailPaciente" class="form-label">Email del paciente</label>
+                <input type="text" class="form-control" id="textEmailPaciente" name="textEmailPaciente" 
+                placeholder="Email del Paciente"/>
+              </div>
+              <div class="mb-3">
+                <label for="textFechaNacimientoPaciente" class="form-label">Fecha de nacimiento del paciente</label>
+                <input type="text" class="form-control" id="textFechaNacimientoPaciente" name="textFechaNacimientoPaciente" 
+                placeholder="Fecha de nacimiento del Paciente"/>
+              </div>
+              <div class="mb-3">
+                <label for="textGeneroPaciente" class="form-label">Genero del paciente</label>
+                <input type="text" class="form-control" id="textGeneroPaciente" name="textGeneroPaciente" 
+                placeholder="Genero del Paciente"/>
+              </div>
+              <div class="mb-3">
+                <label for="textNombrePaciente" class="form-label">Nombre del paciente</label>
+                <input type="text" class="form-control" id="textNombrePaciente" name="textNombrePaciente" 
+                placeholder="Nombre del Paciente"/>
+              </div>
+              <div class="mb-3">
+                <label for="intTelefonoPaciente" class="form-label">Telefono del paciente</label>
+                <input type="number" class="form-control" id="intTelefonoPaciente" name="intTelefonoPaciente" 
+                placeholder="Telefono del Paciente"/>
+              </div>
+              <div class="mb-3">
+                <label for="textUsuarioPaciente" class="form-label">Usuario del paciente</label>
+                <input type="text" class="form-control" id="textUsuarioPaciente" name="textUsuarioPaciente" 
+                placeholder="Usuario del Paciente"/>
+              </div>
+              <button class="btn btn-primary" onclick="GuardarPaciente();" id="GuardarPaciente">Guardar</button>
+            </form>
+           
+            <div class="alert alert-success" role="alert" style="display:none" id="alertSuccess">
+              </div>
+              <div class="alert alert-danger" role="alert" style="display:none" id="alertError">
+               
+              </div>
+         </section>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" 
+integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+        <script src="../Assets/js/paciente.js"></script>
+    </body>
+</html>

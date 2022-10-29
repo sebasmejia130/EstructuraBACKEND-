@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Aplicativo Medico">
+    <meta name="keywords" content="Aplicativo Medico,AppMedica,NuevoMedico">
+    <meta name="author" content="Sebitas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo Medico - Nuevo Medico</title>
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body class="body">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Aplicativo Medico</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Menu Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paciente.html">Pacientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./medicoGeneral.html">Lista Medicos Generales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ordenesRemisiones.html">Ordenes/Remisiones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br />
+        <header class="pb-3 mb-4 border-bottom">
+            <h3 class="title">Crear Medico General</h3>
+        </header>
+        <section class="content">
+            <form id="formMedicoGeneral" accept-charset="utf-8">
+                <div class="mb-3">
+                    <input type="hidden" class="form-control" name="id_medico_pk" value="0" id="id_medico_pk">
+                    <label for="textIdMedico" class="form-label">IdMedico</label>
+                    <input type="text" class="form-control" name="textIdMedico" id="textIdMedico"
+                        placeholder="ID Medico">
+                </div>
+                <div class="mb-3">
+                    <label for="textContraseña" class="form-label">Contraseña Medico</label>
+                    <input type="text" class="form-control" id="textContraseña" name="textContraseña"
+                        placeholder="Contraseña Medico" />
+                </div>
+                <div class="mb-3">
+                    <label for="textapellidoMaterno" class="form-label">Apellido materno del medico</label>
+                    <input type="text" class="form-control" id="textapellidoMaterno" name="textapellidoMaterno"
+                        placeholder="Apellido Materno del medico" />
+                </div>
+                <div class="mb-3">
+                    <label for="textapellidoPaterno" class="form-label">Apellido paterno del medico</label>
+                    <input type="text" class="form-control" id="textapellidoPaterno" name="textapellidoPaterno"
+                        placeholder="Apellido Paterno del medico" />
+                </div>
+                <div class="mb-3">
+                    <label for="texareaMedico" class="form-label">Area de trabajo del medico</label>
+                    <input type="text" class="form-control" id="texareaMedico" name="textareaMedico"
+                        placeholder="Area de trabajo del medico" />
+                </div>
+                <div class="mb-3">
+                    <label for="textgeneroMedico" class="form-label">Genero del medico</label>
+                    <input type="text" class="form-control" id="textgeneroMedico" name="textgeneroMedico"
+                        placeholder="Genero del medico" />
+                </div>
+                <div class="mb-3">
+                    <label for="textnombreMedico" class="form-label">Nombre del medico</label>
+                    <input type="text" class="form-control" id="textnombreMedico" name="textnombreMedico"
+                        placeholder="Nombre del medico" />
+                </div>
+                <div class="mb-3">
+                    <label for="textremision" class="form-label">Remision</label>
+                    <input type="text" class="form-control" id="textremision" name="textremision"
+                        placeholder="Remision" />
+                </div>
+                <div class="mb-3">
+                    <label for="inttelefonoMedico" class="form-label">Telefono del medico</label>
+                    <input type="number" class="form-control" id="inttelefonoMedico" name="inttelefonoMedico"
+                        placeholder="Telefono del medico" />
+                </div>
+                <div class="mb-3">
+                    <label for="textusuarioMedico" class="form-label">Usuario del medico</label>
+                    <input type="text" class="form-control" id="textusuarioMedico" name="textusuarioMedico"
+                        placeholder="Usuario del medico" />
+                </div>
+                
+                
+                <button class="btn btn-primary" onclick="GuardarMedicoGeneral();" id="GuardarMedicoGeneral">Guardar</button>
+            </form>
+
+            <div class="alert alert-success" role="alert" style="display:none" id="alertSuccess">
+            </div>
+            <div class="alert alert-danger" role="alert" style="display:none" id="alertError">
+
+            </div>
+        </section>
+        </nav>
+        <script src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+        <script src="../Assets/js/medicoGeneral.js"></script>
+</body>
+
+</html>
+
+

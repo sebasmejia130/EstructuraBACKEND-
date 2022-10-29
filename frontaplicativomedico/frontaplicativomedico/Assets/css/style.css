@@ -1,0 +1,20 @@
+.body {
+    background-color: #7d6de9;
+}
+.contenedor-img{
+    margin: auto;
+    width: 60%;
+    height: 60%;
+}
+.site-footer  {
+   text-align: center;
+}
+.content{
+    margin: auto;
+    width: 80%;
+    height: 80%; 
+}
+.saludo{
+    color:rgb(0, 186, 254);
+   font-size: 12px;
+}

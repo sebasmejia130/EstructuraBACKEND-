@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Aplicativo Medico">
+    <meta name="keywords" content="AppMedico,Paciente,AplicativoMedico">
+    <meta name="author" content="Sebastian">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo Medico - Pacientes</title>
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="../Assets/css/jquery.dataTables.min.css">
+    </head>
+<body class="body">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Aplicativo Medico - Pacientes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Menu Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paciente.html">Pacientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./medicoGeneral.html">Medicos Generales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ordenesRemisiones.html">Ordenes/Remisiones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br />
+        <header class="pb-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                <a href="./nuevoPaciente.html" class="btn btn-info">Nuevo Paciente</a>               
+            </a>
+            <div class="alert alert-success" role="alert" style="display:none;"id="alertSuccessmenu">
+              </div>
+              <div class="alert alert-danger" role="alert" style="display:none" id="alertErrormenu">
+            </div>
+          </header>
+          <section class="content">
+            <table class="table display" id="tablapaciente"  style="width:100%">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Apellido Materno</th>
+                    <th scope="col">Apellido Paterno</th>
+                    <th scope="col">Ciudad Residencia</th>
+                    <th scope="col">Codigo Afiliacion</th>
+                    <th scope="col">Contraseña Paciente</th>
+                    <th scope="col">Direccion Residencia</th>
+                    <th scope="col">Email Paciente</th>
+                    <th scope="col">Fecha Nacimiento Paciente</th>
+                    <th scope="col">Genero Paciente</th>
+                    <th scope="col">Nombre Paciente</th>
+                    <th scope="col">Telefono Paciente</th>
+                    <th scope="col">Usuario Paciente</th>
+                    <th scope="col">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                   
+                </tbody>
+              </table>
+        </section>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" 
+integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+    <script src="../Assets/js/jquery.dataTables.min.js"></script>
+    <script src="../Assets/js/paciente.js"></script>
+
+
+</body>
+</html>
